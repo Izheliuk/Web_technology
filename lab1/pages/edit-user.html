@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Edit User - Internet Store</title>
+  <link rel="stylesheet" href="../css/main.css" />
+</head>
+<body>
+    <nav>
+    <div class="logo">Internet Store</div>
+    <div class="nav-links">
+      <a href="store.html">Store</a>
+      <a href="users.html">Users</a>
+      <a href="create-user.html">Create User</a>
+      <a href="login.html">Logout</a>
+    </div>
+  </nav>
+  
+  <main class="container">
+    <h1>Edit User</h1>
+    <form action="#" method="post" class="form-user">
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" value="admin1" required />
+
+      <label for="password">New Password</label>
+      <input type="password" id="password" name="password" />
+
+      <label for="confirm-password">Confirm New Password</label>
+      <input type="password" id="confirm-password" name="confirm-password" />
+
+      <label for="role">Role</label>
+      <select id="role" name="role" required>
+        <option value="admin" selected>Admin</option>
+        <option value="regular">Regular</option>
+      </select>
+
+      <div class="form-buttons">
+        <button type="submit">Save</button>
+        <a href="user-detail.html" class="cancel-btn">Cancel</a>
+      </div>
+    </form>
+  </main>
+</body>
+</html>

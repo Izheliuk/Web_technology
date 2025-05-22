@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Users - Internet Store</title>
+  <link rel="stylesheet" href="../css/main.css" />
+
+</head>
+<body>
+  <nav>
+    <div class="logo">Internet Store</div>
+    <div class="nav-links">
+      <a href="store.html">Store</a>
+      <a href="users.html">Users</a>
+      <a href="create-user.html">Create User</a>
+      <a href="login.html">Logout</a>
+    </div>
+  </nav>
+
+  <main class="user-list">
+    <h2>All Users</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Username</th>
+          <th>Role</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a href="user-detail.html">admin1</a></td>
+          <td><span class="role admin">Admin</span></td>
+          <td>
+            <a href="edit-user.html"><button>Edit</button></a>
+            <button class="delete">Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="user-detail.html">user123</a></td>
+          <td><span class="role regular">Regular</span></td>
+          <td>
+            <a href="edit-user.html"><button>Edit</button></a>
+            <button class="delete">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <a href="create-user.html"><button class="create-user">Create User</button></a>
+  </main>
+</body>
+</html>

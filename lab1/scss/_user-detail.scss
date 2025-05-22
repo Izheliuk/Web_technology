@@ -1,0 +1,58 @@
+.user-detail {
+  .user-info {
+    background-color: #fff;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+
+    p {
+      margin: 0.5rem 0;
+      font-size: 1rem;
+
+      .role {
+        padding: 0.25rem 0.5rem;
+        border-radius: 4px;
+        font-weight: bold;
+
+        &.admin {
+          background-color: lighten($primary-color, 30%);
+          color: $primary-color;
+        }
+
+        &.regular {
+          background-color: lighten($secondary-color, 30%);
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+
+  .detail-actions {
+    display: flex;
+    justify-content: space-between;
+
+    a {
+      padding: 0.5rem 1.5rem;
+      text-decoration: none;
+      border-radius: 8px;
+      color: white;
+
+      &.edit-btn {
+        background-color: $primary-color;
+
+        &:hover {
+          background-color: darken($primary-color, 10%);
+        }
+      }
+
+      &.back-btn {
+        background-color: #888;
+
+        &:hover {
+          background-color: darken(#888, 10%);
+        }
+      }
+    }
+  }
+}
