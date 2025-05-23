@@ -142,28 +142,6 @@
   background-color: #f9f9f9;
   min-height: 100vh;
 }
-.store nav {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin-bottom: 2rem;
-}
-.store nav a {
-  padding: 0.6rem 1.2rem;
-  background-color: #0077cc;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: 600;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-.store nav a:hover {
-  background-color: #005fa3;
-  transform: translateY(-2px);
-}
-.store nav a:active {
-  transform: scale(0.97);
-}
 .store .products-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -354,24 +332,27 @@ button:hover {
 }
 
 nav {
-  background-color: #f0f0f0;
-  padding: 1rem;
+  background-color: #333;
+  color: white;
+  padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-nav .nav-links {
-  display: flex;
-  align-items: center;
-}
-nav a {
-  margin-right: 1rem;
-  text-decoration: none;
-  color: #333;
+
+nav .logo {
+  font-size: 1.5rem;
   font-weight: bold;
 }
-nav a:last-child {
-  margin-right: 0;
+
+.nav-links a {
+  margin-left: 1rem;
+  color: white;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #00bfff;
 }
 
 /*# sourceMappingURL=main.css.map */
