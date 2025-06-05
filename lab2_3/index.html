@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Вибір API</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    #loading {
+      display: none;
+      font-style: italic;
+      margin-top: 10px;
+    }
+    #data-container {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Оберіть джерело даних</h1>
+  <div class="api-buttons">
+    <button onclick="loadData('nasa')">NASA Фото дня 🌌</button>
+    <button onclick="loadData('spacex')">Останній запуск SpaceX 🚀</button>
+    <button onclick="loadData('randomuser')">Фото випадкової людини 👤</button>
+  </div>
+
+  <div id="loading">Завантаження...</div>
+  <div id="data-container"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
